@@ -1,0 +1,59 @@
+object Form1: TForm1
+  Left = 0
+  Height = 121
+  Top = 0
+  Width = 303
+  Caption = 'Lazarus Arduino loT'
+  ClientHeight = 121
+  ClientWidth = 303
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Visible = False
+  object aktif: TButton
+    Left = 8
+    Height = 49
+    Top = 40
+    Width = 75
+    Caption = 'AKTİF'
+    OnClick = aktifClick
+    TabOrder = 0
+  end
+  object pasif: TButton
+    Left = 200
+    Height = 49
+    Top = 40
+    Width = 75
+    Caption = 'PASİF'
+    OnClick = pasifClick
+    TabOrder = 1
+  end
+  object ayar: TButton
+    Left = 104
+    Height = 33
+    Top = 8
+    Width = 75
+    Caption = 'AYARLAR'
+    OnClick = ayarClick
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 19
+    Top = 96
+    Width = 238
+    Caption = 'Sami Babat: https://github.com/Sam0bt'
+    ParentColor = False
+  end
+  object LazSerial1: TLazSerial
+    Active = False
+    BaudRate = br__9600
+    DataBits = db8bits
+    Parity = pNone
+    FlowControl = fcNone
+    StopBits = sbOne
+    Device = '/dev/ttyUSB0'
+    RcvLineCRLF = False
+    left = 128
+    top = 48
+  end
+end
