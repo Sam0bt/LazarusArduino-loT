@@ -1,7 +1,7 @@
 #include "Arduino.h";
 int val = 0;
-int ledPin = 11;
-int buzzerPin =12;
+int ledPin = 12;
+int buzzerPin =13;
 void setup() {
   pinMode(ledPin,OUTPUT);
   pinMode(buzzerPin,OUTPUT);
@@ -18,7 +18,7 @@ void loop () {
     }
     else if (val=='1'){
       digitalWrite(ledPin,LOW);
-      digitalWrite(buzzerPin, LOW);
+      noTone(buzzerPin);
       Serial.write("PASİF");
       }
 }
