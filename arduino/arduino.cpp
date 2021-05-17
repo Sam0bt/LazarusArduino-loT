@@ -14,12 +14,12 @@ void loop () {
     if (val=='0'){
       digitalWrite(ledPin,HIGH);
       tone(buzzerPin,0);
-      Serial.write("AKTİF");
+      Serial.write("AKTİF!");
     }
     else if (val=='1'){
       digitalWrite(ledPin,LOW);
       noTone(buzzerPin);
-      Serial.write("PASİF");
+      Serial.write("PASİF!");
       }
 }
 }
